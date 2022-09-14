@@ -4,6 +4,9 @@ import com.example.bootlab.Async.AsyncPasswordGenerator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+
 @Component
 public class Runner implements CommandLineRunner {
     private final AsyncPasswordGenerator passwordGenerator;
@@ -14,7 +17,18 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws InterruptedException {
-        this.passwordGenerator.generateLong();
-        this.passwordGenerator.generateShort();
+        CompletableFuture<String> longPassFuture = this.passwordGenerator.generateLong();
+        CompletableFuture<String> shortPassFuture = this.passwordGenerator.generateShort();
+
+        try {
+            String longPass = longPassFuture.get();
+            String shortPass = shortPassFuture.get();
+
+            System.out.println(longPass);
+            System.out.println(shortPass);
+
+        } catch (InterruptedException | ExecutionException ex) {
+            System.out.println(ex);
+        }
     }
 }
