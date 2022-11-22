@@ -1,4 +1,4 @@
-package com.example.bootlab.ThreadConfig;
+package com.example.bootlab.threadconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

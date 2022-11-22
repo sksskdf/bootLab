@@ -1,8 +1,8 @@
-package com.example.bootlab.Async;
+package com.example.bootlab.async;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import com.example.bootlab.Async.PasswordConfig.*;
+import com.example.bootlab.async.PasswordConfig.*;
 
 import java.util.Random;
 

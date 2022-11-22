@@ -1,13 +1,13 @@
 package com.example.bootlab;
 
-import com.example.bootlab.Async.AsyncPasswordGenerator;
+import com.example.bootlab.async.AsyncPasswordGenerator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-@Component
+//@Component
 public class Runner implements CommandLineRunner {
     private final AsyncPasswordGenerator passwordGenerator;
 

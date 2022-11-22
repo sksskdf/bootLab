@@ -1,4 +1,4 @@
-package com.example.bootlab.Entity;
+package com.example.bootlab.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

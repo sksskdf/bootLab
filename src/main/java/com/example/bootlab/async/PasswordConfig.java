@@ -1,4 +1,4 @@
-package com.example.bootlab.Async;
+package com.example.bootlab.async;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

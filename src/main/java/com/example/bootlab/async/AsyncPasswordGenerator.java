@@ -1,4 +1,4 @@
-package com.example.bootlab.Async;
+package com.example.bootlab.async;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
