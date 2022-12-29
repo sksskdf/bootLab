@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 class PracticeController {
-    val taskList = mutableListOf(
+    private val taskList = mutableListOf(
         Task(1, "task1", "A first test task", false),
         Task(2, "task2", "A second test task", true)
     )
